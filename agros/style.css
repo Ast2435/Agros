@@ -2,225 +2,53 @@
 @import url("https://fonts.googleapis.com/css?family=Open+Sans|Raleway&display=swap");
 
 html {
+  padding: 0;
+  margin: 0;
   font-size: 10px;
   box-sizing: border-box;
   scroll-behavior: smooth;
-  font-family: "Raleway";
-  background-color: #BDBDBD;
-  left: 0;
-  right: 0;
-
-}
-main {
-  margin-top: 6rem; /*this gives space for the navbar*/
 }
 
-#navbar {
-  top: 0;
-  left: 0;
-  position: fixed;
-  background-color: #536dfe;
-  width: 100%;
-  border-bottom: 2px solid gray;
-  padding: 0;
-
-}
-#navbar ul {
-  display: flex;
-  align-items: center;
-  justify-content: flex-end;
-  font-family: "Open Sans";
-  font-size: 2rem;
-  height: 5rem;
-  margin-right: 2rem;
-  padding: 0;
+ul{
+  list-style-type: circle;
 }
 
-.nav-link {
-  display: inline-block;
-  padding: 3rem;
-  height: 100%;
-  color: #212121;
-}
-
-.nav-link:hover{
-  cursor: pointer;
-  background-color: #BDBDBD;
-  color: #212121;
-  transition-time: 0.5s;
-}
-
-/*This contains main section and first h1 and p*/
-#welcome-section {
+#mainSection{
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  background-color: #ff5722;
   height: 100vh;
   width: 100%;
 }
-#main-img{
-  display: flex;
 
-}
-#profile-pic{
-  height: 15rem;
-  width: 15rem;
-  object-fit: cover;
- border-radius: 50%;
-}
-
-#welcome-section h1 {
-  font-size: 3rem;
-  color: #FFFFFF;
-  padding-bottom: 0;
-  text-shadow: 2px 2px #212121;
-}
-#welcome-section p {
-  font-size: 1.8rem;
-  color: #212121;
-}
-
-#project-header {
-  display: flex;
-  justify-content: center;
-  font-size: 2.5rem;
-}
-#projects {
-  background-color: #ffccbc;
-  padding: 2rem;
-  margin-top: 1rem;
-}
-#project-header{
-  padding-top: 2rem;
-  font-weight: bold;
-}
-
-#grid-container {
-  display: grid;
-  grid-gap: 3rem;
-  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+#navbar {
+  background-color: red;
   width: 100%;
-  /*  grid-template-rows: repeat(auto-fit, minmax(270px, 1fr));*/
+
 }
 
-/*a tile contains the img, and the title, each tile its a grid element*/
-.project-tile {
-  box-shadow: 0.3rem 0.3rem #E64A19;
-  border-radius: 5%;
-  background-color: #536DFE;
-}
-
-.project-tile:hover{
-  transform: scale(1.2);
-  transition-duration: 0.3s;
-}
-
-/*style for project images*/
-.project-image {
-  max-width: 100%; /*This is for filling the grid container*/
-  height: auto;
-  object-fit: cover; /*This is to keep the img ratio intact, even if the img is cut*/
-	border-radius: 4%;
-}
-
-/*Style for titles under project images*/
-.project-title {
-  text-decoration: none;
-  margin: 0;
-  font-size: 2rem;
-  text-align: center;
-  padding: .5rem;
-  color: #212121;
-}
-#contact {
-
-  margin-top: 1rem;
-  background-color: #E64A19;
-  padding-bottom: 3rem;
-  border-bottom: 2px solid #BDBDBD;
-}
-#contact-info {
+#navbar ul{
   display: flex;
-  justify-content: center;
-}
-#contact-text {
-  display: flex;
-  font-size: 1.8rem;
-  flex-direction: column;
+  flex-direction: row;
   align-items: center;
-}
-.contact-logo {
-  text-shadow: 1px 1px #757575;
-  font-family: "Open sans";
-  margin-left: 2rem;
-  font-size: 2.5rem;
-    transition-duration: .3s;
-}
-footer{
-  display: flex;
-  justify-content: center;
-  margin-top: 0;
-  background-color: #E64A19;
+  justify-content: space-around;
+  list-style-type: none;
 }
 
-/*removes underlines from link*/
-a {
+.navLink{
+  display: inline-block;
+  background-color: black;
+  color: white;
   text-decoration: none;
+  padding: 1rem;
+  margin: 0;
 }
 
-#contact a{
-  color: #212121; /*For some reason, if i added this to the class .contact-logo like i'm supossed to, only the first two elements change color, so i had to do this workaround*/
+#logo{
+  display: flex;
+    height: 80vh;
+    width: 100%;
 }
 
-#contact a:visited {
-    color: #212121;
-}
-#contact a:hover{
-    color: #FFFFFF;
-}
-.contact-logo:hover{
-  margin-top: -1rem;
-  transition-duration: .3s;
-}
-
-@media only screen and (max-width:500px)
-{
-  main{
-    margin-top: 30vh;
-}
-
-  #navbar{
-    position: absolute;
-      margin: 0;
-  }
-  #navbar ul{
-    height: 30vh;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
-    margin: 0;
-  }
-  .nav-link{
-    display: inline;
-    padding: 0;
-    margin:0;
-  }
-
-  .nav-link:hover{
-     display: inline;
-        border-radius: 8%;
-  padding: 0;
-    margin: 0;
-}
-  #contact-info{
-    flex-direction: column;
-    align-items: center;
-  }
-  .contact-logo:hover{
-  margin-top: 0;
-  transition-duration: .3s;
-}
-  }
 </style>
