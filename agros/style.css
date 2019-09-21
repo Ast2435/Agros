@@ -65,7 +65,8 @@ ul {
 
 .navLink {
   margin: .5rem;
-  display: inline-block;
+  display: inline-flex;
+  text-align: center;
   background-color: black;
   font-size: 2rem;
   font-family: 'Big Shoulders Display', cursive;
