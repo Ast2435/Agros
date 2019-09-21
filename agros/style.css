@@ -1,54 +1,136 @@
-<style>
-@import url("https://fonts.googleapis.com/css?family=Open+Sans|Raleway&display=swap");
+@import url('https://fonts.googleapis.com/css?family=Big+Shoulders+Display|Squada+One|Roboto&display=swap');
 
 html {
-  padding: 0;
   margin: 0;
+  padding: 0;
   font-size: 10px;
   box-sizing: border-box;
   scroll-behavior: smooth;
+  overflow-x: hidden;
 }
 
-ul{
+body {
+  background-image: linear-gradient(90deg, #000000, #373837);
+  color: white;
+  margin: 0;
+}
+
+h1{
+font-size: 3.2rem;
+}
+
+p{
+  font-family: 'Roboto', cursive;
+  font-size: 1.5rem;
+}
+
+ul {
   list-style-type: circle;
 }
 
-#mainSection{
+#mainSection {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  height: 100vh;
+  justify-content: space-around;
+  background-color: black;
   width: 100%;
+  padding: 0;
+}
+
+#logoSection {
+  display: flex;
+  justify-content: space-around;
+  align-self: center;
 }
 
 #navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
   background-color: red;
   width: 100%;
-
+  height: 20vh;
 }
 
-#navbar ul{
+#navbar ul {
   display: flex;
   flex-direction: row;
+  font-size: 1.5rem;
+  margin-right: 3rem;
   align-items: center;
   justify-content: space-around;
   list-style-type: none;
 }
 
-.navLink{
+.navLink {
+  margin: .5rem;
   display: inline-block;
   background-color: black;
+  font-size: 2rem;
+  font-family: 'Big Shoulders Display', cursive;
   color: white;
   text-decoration: none;
-  padding: 1rem;
-  margin: 0;
+  padding: 2rem;
 }
 
-#logo{
+#logo {
   display: flex;
-    height: 80vh;
-    width: 100%;
+  justify-content: center;
+  align-items: center;
+  height: 80vh;
+  width: 50%;
 }
 
-</style>
+#webContent {
+  display: flex;
+  flex-direction: column;
+}
+.contentBlock{
+    margin-bottom: 5rem;
+}
+.sectionTitle {
+  font-family: 'Squada One', cursive;
+  text-align: center;
+}
+
+#bloqueHorariosContainer{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: stretch;
+}
+
+.bloqueHorarios{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: solid 1px #FFFFFF;
+  border-radius: 2%;
+  width: 28%;
+  padding: 2rem;
+}
+.bloqueHorarios ul{
+  display: flex;
+  flex-direction: column;
+    margin-right: 2.5rem;
+  list-style-type: none;
+  font-size: 1.5rem;
+}
+
+.horarioTitle{
+  text-align: center;
+  font-size: 2rem;
+}
+
+#directionGoogleMaps{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+#googleMapEmbed{
+  width: 60%;
+  min-width: 60%;
+}
