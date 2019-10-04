@@ -7,6 +7,7 @@ html {
   box-sizing: border-box;
   scroll-behavior: smooth;
   overflow-x: hidden;
+  font-family: 'Roboto', cursive;
 }
 
 body {
@@ -15,13 +16,18 @@ body {
   margin: 0;
 }
 
-h1{
-font-size: 3.2rem;
+h1 {
+  font-size: 3.2rem;
 }
 
-p{
+p {
   font-family: 'Roboto', cursive;
   font-size: 1.5rem;
+}
+
+a {
+  text-decoration: none;
+  color: white;
 }
 
 ul {
@@ -81,28 +87,31 @@ ul {
   align-items: center;
   height: 80vh;
   width: 50%;
+  min-width: 40rem;
 }
 
 #webContent {
   display: flex;
   flex-direction: column;
 }
-.contentBlock{
-    margin-bottom: 5rem;
+
+.contentBlock {
+  margin-bottom: 5rem;
 }
+
 .sectionTitle {
   font-family: 'Squada One', cursive;
   text-align: center;
 }
 
-#bloqueHorariosContainer{
+#bloqueHorariosContainer {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
   align-items: stretch;
 }
 
-.bloqueHorarios{
+.bloqueHorarios {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -111,27 +120,71 @@ ul {
   width: 28%;
   padding: 2rem;
 }
-.bloqueHorarios ul{
+
+.bloqueHorarios ul {
   display: flex;
   flex-direction: column;
-    margin-right: 2.5rem;
+  white-space: nowrap;
+  margin-right: 2.5rem;
   list-style-type: none;
   font-size: 1.5rem;
 }
 
-.horarioTitle{
+.horarioTitle {
   text-align: center;
   font-size: 2rem;
 }
 
-#directionGoogleMaps{
+.cost {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 1.7rem;
+}
+
+#directionGoogleMaps {
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
 }
 
-#googleMapEmbed{
+#googleMapEmbed {
   width: 60%;
   min-width: 60%;
+}
+
+#contactInfo {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-top: 5rem;
+}
+
+#contact a {
+  text-decoration: none;
+}
+
+.contactLogo {
+  display: flex;
+  justify-content: center;
+  font-size: 2.3rem;
+  margin-left: 2rem;
+   transition-duration: .3s;
+}
+
+.contactLogo:hover{
+  margin-top: -1rem;
+  transition-duration: .3s;
+}
+
+#contact a:hover{
+  color: red;
+}
+
+footer {
+  border-top: 1px solid gray;
+  display: flex;
+  justify-content: center;
+  margin-top: 0;
 }
