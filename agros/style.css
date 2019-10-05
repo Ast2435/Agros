@@ -41,7 +41,6 @@ ul {
   justify-content: space-around;
   background-color: black;
   width: 100%;
-  padding: 0;
 }
 
 #logoSection {
@@ -70,7 +69,7 @@ ul {
 }
 
 .navLink {
-  margin: .5rem;
+  margin: .1rem;
   display: inline-flex;
   text-align: center;
   background-color: black;
@@ -78,7 +77,11 @@ ul {
   font-family: 'Big Shoulders Display', cursive;
   color: white;
   text-decoration: none;
-  padding: 2rem;
+  padding: 1.5rem;
+}
+
+.navLink:hover{
+  color: red;
 }
 
 #logo {
@@ -87,7 +90,9 @@ ul {
   align-items: center;
   height: 80vh;
   width: 50%;
-  min-width: 40rem;
+  max-width: 100%;
+  min-height: 100%;
+   object-fit: contain; /*This respects the aspect-radio of the logo so it doesn't distorts*/
 }
 
 #webContent {
@@ -117,7 +122,7 @@ ul {
   align-items: center;
   border: solid 1px #FFFFFF;
   border-radius: 2%;
-  width: 28%;
+  width: 23%;
   padding: 2rem;
 }
 
@@ -150,7 +155,7 @@ ul {
 }
 
 #googleMapEmbed {
-  width: 60%;
+  width: 70%;
   min-width: 60%;
 }
 
@@ -191,14 +196,15 @@ footer {
 
 /*Media Query for Smartphones */
 
-@media only screen and (max-width : 420px) {
+@media only screen and (max-width : 500px) {
 
 #navbar{
   height: 100%;
+  width: 100%;
 }
 
 #logo{
-  height: 50vh;
+  height: 60vh;
 }
 
 #navbar ul {
@@ -206,16 +212,45 @@ footer {
   flex-direction: column;
 }
 
+.navLink:hover{
+  color: white;
+}
+
 #bloqueHorariosContainer{
   flex-direction: column;
   align-items: center;
 }
 
+.bloqueHorarios{
+  width: 70%;
+  margin-top: 1.5rem;
+}
+
 .navLink{
+  color: black;
+  font-weight: 500;
   padding: 0.2rem;
   background-color: red;
   margin: .3rem;
-    border-bottom: 1px solid black;
+  border-bottom: 1px solid white;
+}
+
+#googleMapEmbed{
+  width: 99%;
+}
+
+/*social media*/
+#contactInfo{
+  flex-direction: column;
+  margin-bottom: -2rem;
+  }
+
+.contactLogo{
+  margin-top: 1.5rem;
+}
+
+.contactLogo:hover{
+  margin-top: 1.5rem;
 }
 
 }
