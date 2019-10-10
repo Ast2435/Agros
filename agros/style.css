@@ -4,13 +4,16 @@ html {
   margin: 0;
   padding: 0;
   font-size: 10px;
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   scroll-behavior: smooth;
   overflow-x: hidden;
   font-family: 'Roboto', cursive;
 }
 
 body {
+  background-image: -webkit-gradient(linear, left top, right top, from(#000000), to(#373837));
+  background-image: -o-linear-gradient(left, #000000, #373837);
   background-image: linear-gradient(90deg, #000000, #373837);
   color: white;
   margin: 0;
@@ -35,41 +38,68 @@ ul {
 }
 
 #mainSection {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-around;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
   background-color: black;
   width: 100%;
 }
 
 #logoSection {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-around;
-  align-self: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -ms-flex-item-align: center;
+      align-self: center;
 }
 
 #navbar {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
-  justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
   background-color: #fe1800;
   width: 100%;
   height: 20vh;
 }
 
 #navbar ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: row;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
   font-size: 1.5rem;
   margin-right: 3rem;
-  align-items: center;
-  justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
   list-style-type: none;
 }
 
 .navLink {
   margin: .1rem;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
   display: inline-flex;
   text-align: center;
   background-color: black;
@@ -85,19 +115,31 @@ ul {
 }
 
 #logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   height: 80vh;
   width: 50%;
   max-width: 100%;
   min-height: 100%;
-   object-fit: contain; /*This respects the aspect-radio of the logo so it doesn't distorts*/
+   -o-object-fit: contain;
+      object-fit: contain; /*This respects the aspect-radio of the logo so it doesn't distorts*/
 }
 
 #webContent {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 .contentBlock {
@@ -110,16 +152,31 @@ ul {
 }
 
 #bloqueHorariosContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  align-items: stretch;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
 }
 
 .bloqueHorarios {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   border: solid 1px #FFFFFF;
   border-radius: 2%;
   width: 23%;
@@ -127,8 +184,13 @@ ul {
 }
 
 .bloqueHorarios ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   white-space: nowrap;
   margin-right: 2.5rem;
   list-style-type: none;
@@ -141,17 +203,33 @@ ul {
 }
 
 .cost {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   font-size: 1.7rem;
 }
 
 #directionGoogleMaps {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 #googleMapEmbed {
@@ -160,9 +238,16 @@ ul {
 }
 
 #contactInfo {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: row;
-  justify-content: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   margin-top: 5rem;
 }
 
@@ -171,16 +256,24 @@ ul {
 }
 
 .contactLogo {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   font-size: 2.3rem;
   margin-left: 2rem;
-   transition-duration: .3s;
+   -webkit-transition-duration: .3s;
+        -o-transition-duration: .3s;
+           transition-duration: .3s;
 }
 
 .contactLogo:hover{
   margin-top: -1rem;
-  transition-duration: .3s;
+  -webkit-transition-duration: .3s;
+       -o-transition-duration: .3s;
+          transition-duration: .3s;
 }
 
 #contact a:hover{
@@ -189,13 +282,17 @@ ul {
 
 footer {
   border-top: 1px solid gray;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   margin-top: 0;
 }
 
 /*Start of CSS for slideshow */
-* {box-sizing:border-box}
+* {-webkit-box-sizing:border-box;box-sizing:border-box}
 
 /* Slideshow container */
 .slideshow-container {
@@ -206,12 +303,14 @@ footer {
 
 .mySlides img{
   width: 100%;
-  object-fit: contain;
+  -o-object-fit: contain;
+     object-fit: contain;
   max-height: 50rem;
 }
 
 .mySlides video{
-  object-fit: contain;
+  -o-object-fit: contain;
+     object-fit: contain;
   width: 100%;
   max-height: 50rem;
 }
@@ -232,9 +331,14 @@ footer {
   color: #fe1800;
   font-weight: bold;
   font-size: 1.8rem;
+  -webkit-transition: 0.6s ease;
+  -o-transition: 0.6s ease;
   transition: 0.6s ease;
   border-radius: 0 3px 3px 0;
-  user-select: none;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
 }
 
 /* Position the "next button" to the right */
@@ -264,7 +368,7 @@ not used yet but can be used.
 /* Number text (1/16 etc) */
 .numbertext {
   color: #fe1800;
-  font-size: 12px;
+  font-size: 1.5rem;
   padding: 8px 12px;
   position: absolute;
   top: 0;
@@ -278,7 +382,11 @@ not used yet but can be used.
   margin: 0 2px;
   background-color: #cfcfcf;
   border-radius: 50%;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
   display: inline-flex;
+  -webkit-transition: background-color 0.6s ease;
+  -o-transition: background-color 0.6s ease;
   transition: background-color 0.6s ease;
 }
 
@@ -319,8 +427,13 @@ not used yet but can be used.
 }
 
 #navbar ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 .navLink:hover{
@@ -328,8 +441,13 @@ not used yet but can be used.
 }
 
 #bloqueHorariosContainer{
-  flex-direction: column;
-  align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .bloqueHorarios{
@@ -352,7 +470,10 @@ not used yet but can be used.
 
 /*social media*/
 #contactInfo{
-  flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   margin-bottom: -2rem;
   }
 
