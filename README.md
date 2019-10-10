@@ -23,4 +23,3 @@ This static website was built with the basic trio.
 3. javaScript
 
 
-TODO: Improve this README...
